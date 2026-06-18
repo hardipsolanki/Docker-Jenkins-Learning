@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
              echo 'Builing the application'
+             echo "${env.BRANCH_NAME}"
             }
         }
         stage('Test') {
@@ -15,6 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the application'
+                echo 'Building the application with maven'
             }
         }
     }
