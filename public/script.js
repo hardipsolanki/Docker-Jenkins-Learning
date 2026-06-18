@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/api/v1/users";
+const API_URL = "https://docker-jenkins-learning.onrender.com/api/v1/users";
 
 const tableBody = document.getElementById("usersTableBody");
 const createUserBtn = document.querySelector("#createUserBtn");
